@@ -1,6 +1,12 @@
 
 
 def mined_minds(number) # define function mined_minds to pass a numbefr
-	number
-end
+	 # number
+	if number == 3
+		"mined"
+	else 
+		number
+	end
+
+	end
 
