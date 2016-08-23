@@ -1,18 +1,12 @@
-accumulator = 0
+accumulator = 1
 100 . times do
-	accumulator = accumulator + 1
-if accumulator%3==0 && accumulator%5==0
-	puts "mined minds"
-	elsif 
-		accumulator %3 == 0
-			puts"mined"
-	elsif 
-		accumulator %5 == 0
-			puts "minds"
-		#end
+	# accumulator = accumulator + 1
+if accumulator%3==0
+	puts "mined"
+	
 	else
 		puts accumulator
 end
-
-#accumulator=accumulator+1
+# sleep (0.25)
+accumulator=accumulator+1
 end
