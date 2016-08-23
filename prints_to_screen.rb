@@ -3,6 +3,8 @@ accumulator = 1
 	# accumulator = accumulator + 1
 if accumulator%3==0
 	puts "mined"
+elsif accumulator%5==0
+	puts "minds"
 	
 	else
 		puts accumulator
