@@ -1,8 +1,7 @@
 require "minitest/autorun" # load the minitest gem
+require_relative"mined_minds_function.rb"
 
-def mined_minds(number) # define function mined_minds to pass a numbefr
-	1
-end
+
 
 class TestMinedMindsFunction < Minitest::Test 
 	def test_1_equals_1
