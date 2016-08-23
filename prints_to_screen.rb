@@ -11,6 +11,6 @@ elsif number%5==0
 	else
 		puts number
 end
-# sleep (0.25)
+ sleep (0.25)
 number=number+1
 end
