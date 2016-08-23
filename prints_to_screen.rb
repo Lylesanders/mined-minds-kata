@@ -1,14 +1,16 @@
-accumulator = 1
+number = 1
 100 . times do
-	# accumulator = accumulator + 1
-if accumulator%3==0
+	if number % 15 == 0
+		puts "mind minds"
+	# number = number + 1
+elsif number%3==0
 	puts "mined"
-elsif accumulator%5==0
+elsif number%5==0
 	puts "minds"
 	
 	else
-		puts accumulator
+		puts number
 end
 # sleep (0.25)
-accumulator=accumulator+1
+number=number+1
 end
