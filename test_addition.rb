@@ -16,8 +16,22 @@ class TestAdditionFunction < Minitest::Test  	#create template for test
 		assert_equal(1, add(0, 1))				
 	end
 
+	def test_1_plus_1_plus_1_equal_3
+		assert_equal(3, add(1, 1, 1))			# test that addition of multiple numbers
+												# function variables should be verbs as they perform an action
+	end
+
+
 	def test_negative_3_plus_5_returns_2		#test that -5+3=2
 		assert_equal(2, add(5, -3))				# (expect value, variable(param1, param2))
+	end
+		def test_1_plus_2_plus_3_equal_6
+		assert_equal(6, add(1, 2, 3))			# test that addition of multiple numbers
+												# function variables should be verbs as they perform an action
+	end
+		def test_0_plus_5_plus_negative3_plus_8_equal_10
+		assert_equal(10, add(0, 5, -3, 8))			# test that addition of multiple numbers
+												# function variables should be verbs as they perform an action
 	end
 
 end												#end class
@@ -44,5 +58,7 @@ class TestDivisionFunction <Minitest::Test
 	def test_100_divide_0
 		assert_equal("Divide by zero error", divide(100, 0))
 	end
-
-end											#ends class for TestDivisionFunction
+	def test_10_divide_5
+		assert_equal(2, divide(10, 5))
+	end
+end
