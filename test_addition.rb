@@ -38,6 +38,8 @@ class TestDivisionFunction <Minitest::Test
 	def test_20_divide_4
 		assert_equal(4, divide(20, 5))
 	end
-
+	def test_35_divide_5
+		assert_equal(7, divide(35, 5))
+	end
 
 end											#ends class for TestDivisionFunction
