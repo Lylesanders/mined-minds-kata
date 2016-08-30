@@ -1,5 +1,6 @@
 require "minitest/autorun"						# add minitest function to program
 require_relative "addition.rb"					# point test to correct program
+require_relative "subtraction.rb"
 
 class TestAdditionFunction < Minitest::Test  	#create template for test
 	def test_0_plus0_equal_0					# Begin all tests with test
@@ -19,3 +20,10 @@ class TestAdditionFunction < Minitest::Test  	#create template for test
 	end
 
 end												#end class
+
+class TestSubtractionFunction < Minitest::Test
+def test_10_minus_5
+	assert_equal(5, subtraction(10,5))
+end
+
+end
