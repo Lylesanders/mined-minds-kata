@@ -10,6 +10,8 @@ class TestAdditionFunction < Minitest::Test  	#create template for test
 		assert_equal(2, add(1, 1))				# test that addition returns 1+1=2
 												# function variables should be verbs as they perform an action
 	end
-
+	def test_0_plus_1_equal_1					# test that addition returns 0+1=1
+		assert_equal(1, add(0, 1))				
+	end
 
 end												#end class
