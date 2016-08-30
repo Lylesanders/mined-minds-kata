@@ -41,5 +41,8 @@ class TestDivisionFunction <Minitest::Test
 	def test_35_divide_5
 		assert_equal(7, divide(35, 5))
 	end
+	def test_100_divide_0
+		assert_equal("Divide by zero error", divide(100, 0))
+	end
 
 end											#ends class for TestDivisionFunction
