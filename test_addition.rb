@@ -14,4 +14,8 @@ class TestAdditionFunction < Minitest::Test  	#create template for test
 		assert_equal(1, add(0, 1))				
 	end
 
+	def test_negative_3_plus_5_returns_2		#test that -5+3=2
+		assert_equal(2, add(5, -3))				# (expect value, variable(param1, param2))
+	end
+
 end												#end class
