@@ -46,5 +46,37 @@ class TestArrayFunction <Minitest::Test             # Sets up the class and incl
         assert_equal("mined minds", results[14])    # checks elements 4 returns 1
     end
 
+    def test_array_element_6_9_12_return_mined              
+
+        results = array_mined_minds                 
+                                                
+        assert_equal("mined", results[5])    # checks elements 5 returns minds
+
+        assert_equal("mined", results[8])    # checks elements 8 returns minds
+
+        assert_equal("mined", results[11])    # checks elements 11 returns minds
+    end
+
+
+    def test_array_element_10_20_25_return_minds              
+
+        results = array_mined_minds                 
+                                                
+        assert_equal("minds", results[9])    # checks elements 5 returns minds
+
+        assert_equal("minds", results[19])    # checks elements 8 returns minds
+
+        assert_equal("minds", results[24])    # checks elements 11 returns minds
+    end
+    def test_array_element_30_45_60_return_mined              
+
+        results = array_mined_minds                 
+                                                
+        assert_equal("mined", results[5])    # checks elements 5 returns minds
+
+        assert_equal("mined", results[8])    # checks elements 8 returns minds
+
+        assert_equal("mined", results[11])    # checks elements 11 returns minds
+    end
 
 end                                             #end of class
