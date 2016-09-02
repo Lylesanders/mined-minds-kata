@@ -4,6 +4,12 @@ def array_mined_minds				# creates the function that returns the array
 
     (1..100).each do |number|		# do loop to load 1 to 100 into array as variable number
 
+    	if number%3 == 0
+    		number = "mined"
+    	else
+    		number = number
+    	end
+
     my_array << number    			#Loades the variable number into array
 
     end								# ends do loop

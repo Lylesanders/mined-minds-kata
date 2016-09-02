@@ -24,4 +24,13 @@ class TestArrayFunction <Minitest::Test             # Sets up the class and incl
                                                 
         assert_equal(2, results[1])                 # checks elements 1 returns 2
     end   
+
+    def test_array_emelent_2_return_mined               
+
+        results = array_mined_minds                 
+                                                
+        assert_equal("mined", results[2])           #checks elements  returns 1
+    end 
+
+
 end                                             #end of class
