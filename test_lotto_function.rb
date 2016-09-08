@@ -18,4 +18,10 @@ class TestLotteryFunction < Minitest::Test
 		my_number = "5567"
 		assert_equal(["2567"], off_by_one(winners, my_number))
 	end
+def test_to_check_for_match_three_again	
+		winners = ["1234","2567", "1976","3274", "1944","2562"]
+		my_number = "5567"
+		assert_equal(["2567"], off_by_one(winners, my_number))
+	end
+
 end
