@@ -24,19 +24,6 @@ def off_by_one(winners, my_number)
 	 		pars_string +=1
 	 	end
 
-	 		
-	 		if winners[pars_winners][0]== my_number[0]
-				match += 1
-			end
-			# if winners[pars_winners][1]== my_number[1]
-			# 	match += 1
-			# end
-			# if winners[pars_winners][2]== my_number[2]
-			# 	match += 1
-			# end
-			# if winners[pars_winners][3]== my_number[3]
-			# 	match +=1
-			# end
 
 	 		if match == 3           # moves winer[pars_winners] into the my winners array
 	 			my_winner << winners[pars_winners]
@@ -46,4 +33,4 @@ def off_by_one(winners, my_number)
 	 	end
 	 	
 	 my_winner   #moves my_winner into good_luck?
-	 end
+end
