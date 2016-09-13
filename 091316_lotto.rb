@@ -1,7 +1,9 @@
-def find_winners(my_ticket,winning_tickets)
+def find_winners(our_tickets,winning_tickets)
 	matches=[]
-	if winning_tickets.include?(my_ticket)
-		matches << my_ticket
-	end
+	winning_tickets.each do |winning_ticket|
+		if winning_ticket ==our_tickets
+			matches << our_tickets
+		end
+	end	
 	matches
 end
