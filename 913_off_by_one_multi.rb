@@ -1,5 +1,27 @@
-# closebut no cigar:
-#- write a function that takes two 4_digit numbers as strings and return ture if they are off by one digit eg "1234" is off by one frome "0234" and "1244"
+def off_by_one(ticket_1,ticket_2)
+	dont_match = 0
+	i = 0
+
+	4.times do 
+		if ticket_1[i] != ticket_2[i]
+			dont_match +=1
+		end
+		i += 1
+	end
+
+	dont_match == 1
+end
+
+def find_ticket_one_off(my_ticket,winning_ticket)
+	ticket_one_off = []
+	winning_ticket.each do |ticket|
+		if off_by_one(my_ticket,ticket)
+			ticket_one_off << ticket
+		end
+		
+	end
+
+end
 def no_cigar(winning_numbers, my_numbers)
 	dont_match=0
 	index_position = 0
@@ -32,4 +54,4 @@ match = []
 		
 	end	# 18
 	match
-end	# 16
+	end
